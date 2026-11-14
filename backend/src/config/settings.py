@@ -3,3 +3,4 @@ DATABASE_URL=os.getenv("DATABASE_URL","mysql+pymysql://routes:routes-demo@db/rou
 REDIS_URL=os.getenv("REDIS_URL","redis://redis:6379/0")
 JWT_SECRET=os.getenv("JWT_SECRET","route-criteria-development-secret-change")
 SEED_DEMO=os.getenv("SEED_DEMO","true").lower()=="true"
+SIMULATION_TIMEOUT_SECONDS=float(os.getenv("SIMULATION_TIMEOUT_SECONDS","20"))

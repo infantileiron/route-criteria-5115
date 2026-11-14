@@ -7,4 +7,5 @@ class Report(Base):
  run_id:Mapped[str]=mapped_column(ForeignKey("decision_runs.id"),unique=True)
  title:Mapped[str]=mapped_column(String(160))
  published_by:Mapped[str]=mapped_column(String(160))
+ basis:Mapped[dict]=mapped_column(JSON,default=dict)
  created_at:Mapped[str]=mapped_column(String(64))
